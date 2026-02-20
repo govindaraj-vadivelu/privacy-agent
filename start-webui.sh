@@ -43,7 +43,12 @@ fi
 
 # Start frontend (from frontend dir so it finds node_modules)
 echo "🎨 Starting frontend..."
+<<<<<<< HEAD
 (cd frontend && npm run dev) &
+=======
+cd frontend
+npm run dev -- --host 0.0.0.0 &
+>>>>>>> 5a03531784bc2ac1fb8d47da06efd0ff55a3bd9e
 FRONTEND_PID=$!
 echo "✅ Frontend starting (PID: $FRONTEND_PID)"
 echo "   Waiting for Vite to be ready..."
