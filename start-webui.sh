@@ -17,9 +17,16 @@ fi
 echo "📍 Current directory: $(pwd)"
 echo ""
 
-# Start backend in background
+# Install backend deps if needed
+if [ ! -d "backend/node_modules" ]; then
+    echo "📦 Installing backend dependencies..."
+    (cd backend && npm install)
+    echo ""
+fi
+
+# Start backend in background (from backend dir so it finds node_modules)
 echo "🔧 Starting backend server..."
-node backend/server.js &
+(cd backend && node server.js) &
 BACKEND_PID=$!
 echo "✅ Backend running (PID: $BACKEND_PID) on http://localhost:3001"
 echo ""
@@ -27,12 +34,20 @@ echo ""
 # Wait a bit for backend to start
 sleep 2
 
-# Start frontend
+# Install frontend deps if needed
+if [ ! -d "frontend/node_modules" ]; then
+    echo "📦 Installing frontend dependencies..."
+    (cd frontend && npm install)
+    echo ""
+fi
+
+# Start frontend (from frontend dir so it finds node_modules)
 echo "🎨 Starting frontend..."
-cd frontend
-npm run dev &
+(cd frontend && npm run dev) &
 FRONTEND_PID=$!
 echo "✅ Frontend starting (PID: $FRONTEND_PID)"
+echo "   Waiting for Vite to be ready..."
+sleep 3
 echo ""
 
 echo "================================"
