@@ -1,0 +1,28 @@
+Subject: GDPR Article 15 - Request for Access to Personal Data
+
+Dear Google Privacy Team,
+
+I am writing to exercise my rights under Article 15 of the General Data Protection Regulation (GDPR).
+
+I request access to all personal data you hold about me, including:
+
+1. **Categories of personal data processed**
+2. **Purposes of processing**
+3. **Recipients or categories of recipients** to whom my data has been disclosed
+4. **Retention period** for my personal data
+5. **Source of the data** if not collected directly from me
+6. **Existence of automated decision-making**, including profiling
+
+Additionally, I request a copy of all personal data in a structured, commonly used, and machine-readable format as per Article 20 (Right to Data Portability).
+
+**Account details:**
+- Email: user@example.com
+- Services used: [List your Google services: Gmail, YouTube, Drive, etc.]
+
+Please respond within 30 days as required by GDPR Article 12(3).
+
+If you need any additional information to verify my identity or process this request, please contact me at this email address.
+
+Thank you for your prompt attention to this matter.
+
+Best regards

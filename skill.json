@@ -1,0 +1,58 @@
+{
+  "name": "privacy-agent",
+  "version": "1.0.0",
+  "description": "AI-powered privacy policy analyzer that generates plain-language reports and GDPR requests",
+  "author": "Govind",
+  "license": "MIT",
+  "keywords": [
+    "privacy",
+    "gdpr",
+    "policy-analysis",
+    "agentic-ai",
+    "data-protection",
+    "compliance"
+  ],
+  "category": "privacy",
+  "tools": [
+    "web_fetch",
+    "web_search"
+  ],
+  "requirements": {
+    "openclaw": ">=2026.2.0"
+  },
+  "files": {
+    "main": "backend/openclaw-agent.js",
+    "docs": "SKILL.md",
+    "demo": "live-demo.js"
+  },
+  "examples": [
+    {
+      "prompt": "Analyze Google's privacy policy",
+      "description": "Fetches and analyzes Google's privacy policy, generates risk-scored report"
+    },
+    {
+      "prompt": "Compare privacy policies for Google, Facebook, and TikTok",
+      "description": "Multi-service comparison with side-by-side risk assessment"
+    },
+    {
+      "prompt": "Is TikTok safe for my kid?",
+      "description": "Child-safety focused analysis"
+    }
+  ],
+  "tags": [
+    "privacy",
+    "security",
+    "compliance",
+    "gdpr",
+    "ccpa",
+    "data-protection"
+  ],
+  "homepage": "https://github.com/your-repo/privacy-agent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-repo/privacy-agent"
+  },
+  "bugs": {
+    "url": "https://github.com/your-repo/privacy-agent/issues"
+  }
+}
